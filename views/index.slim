@@ -1,0 +1,48 @@
+div.container
+  div.row
+    div class="col s12"
+      p
+        a class="waves-effect waves-light btn" id="refresh" refresh
+    
+  div.row
+    div class="col s4"
+      div class="card-panel"
+        p.flow-text
+          | 気温:
+          a id="temp" class="teal-text lighten-2"
+            =@temp
+          | ℃
+          br
+    div class="col s4"
+      div class="card-panel"
+        p.flow-text
+          | 湿度:
+          a id="humidity" class="teal-text lighten-2"
+            =@humid
+          | %
+          br
+    div class="col s4"
+      div class="card-panel"
+        p.flow-text
+          | 不快指数:
+          a id="discomfort" class="teal-text lighten-2"
+            =@discomfort
+          br
+div.container
+  div.row
+    canvas#myChart style="width: 100%; height: auto;"
+
+footer.page-footer
+  div.container
+    div.row
+      div class="col 16 s12"
+        h5.white-text
+          | PiTempLogger
+  div.footer-copyright
+    div.container
+      | Version 0.1
+
+script src="/js/jquery-3.2.1.min.js"
+script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"
+script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"
+script src="/js/index.js"
