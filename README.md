@@ -1,5 +1,5 @@
 # PiTempLogger
-室温，湿度をRaspberryPiで記録するWebアプリケーション．
+Raspberry Pi 2とDHT22センサを用いて室温（及び湿度）を記録するWebアプリケーションです． 
 ![img](img/img.png)
 
 ## 今後の課題
